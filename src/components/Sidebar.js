@@ -20,8 +20,10 @@ class Sidebar extends Component {
         theme='light'
         style={{
           boxShadow: "0 3px 6px rgba(0,0,0,.15)",
-          zIndex: "99999"
+          zIndex: "99999",
+          backgroundColor: "#50E3C2"
         }}
+        width={350}
       >
         <div className="logo" style={{
           height: '32px',
@@ -29,7 +31,7 @@ class Sidebar extends Component {
           margin: '16px'
         }}>
         </div>
-        <Search placeholder="Search..." style={{ width: 180, margin: '10px auto', display: 'block' }} />
+        <Search placeholder="Search..." style={{ width: 290, margin: '10px auto', display: 'block' }} />
         <Menu
           defaultSelectedKeys={['2']}
           mode='inline'
@@ -37,15 +39,15 @@ class Sidebar extends Component {
         >
           <Menu.Item key="1">
             <Icon type="info" />
-            Info Skydas
+            INFO SKYDAS
           </Menu.Item>
           <Menu.Item key="2">
             <Icon type="area-chart" />
-            Apzvalga
+            APŽVALGA
           </Menu.Item>
           <Menu.Item key="3">
             <Icon type="shopping-cart" />
-            Uzsakymai
+            UŽSAKYMAI
           </Menu.Item>
         </Menu>
       </Sider>

@@ -15,21 +15,22 @@
   left: 0;
 } */
 .titleWrapper {
-  text-align: center;
   line-height: 1;
 }
 .title {
   position: relative;
   display: inline-block;
-  white-space: pre-line;
+  color: black !important;
+  text-transform: uppercase;
+  /* white-space: pre-line; */
 }
-.title.underlined::before,
+/* .title.underlined::before,
 .title.underlined::after {
   content: "";
   position: absolute;
   height: 1px;
   top: 50%;
-  border-bottom: 2px solid #9B9B9B;
+  border-bottom: 1px solid #9B9B9B;
   width: 80px;
 }
 .title.underlined::before {
@@ -39,12 +40,14 @@
 .title.underlined::after {
   left: 100%;
   margin-left: 15px;
-}
+} */
 
 
 
 .smallStat {
   box-shadow: 0 3px 6px rgba(0,0,0,.15);
+  padding-top: 10px;
+  height: 70px;
 }
 .smallStat h4 {
   font-weight: bolder;
@@ -57,15 +60,17 @@
   width: 100%;
   font-size: 18px;
   margin: 0 auto !important;
+  margin-bottom: 10px !important;
   display: block !important;
+  padding: 20px 20px !important;
   box-shadow: 0px 3px 6px rgba(0,0,0,.15);
 }
 .ListItem {
-  max-width: 400px;
-  margin: 0 auto;
+  margin: 0px 20px;
 }
 .List .ant-card-body {
-  padding: 10px 5px 10px 10px;
+  padding: 20px 5px 10px 10px;
+  padding-top: 20px !important;
   box-shadow: 0px 3px 6px rgba(0,0,0,.15);
 }
 .ListRow:hover {
@@ -75,13 +80,26 @@
 .ListRow:hover a {
   color: black;
 }
+.ListRow {
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  padding-bottom: 5px !important;
+  margin-bottom: 5px !important;
+}
 
 .Live {
   box-shadow: 0px 3px 6px rgba(0,0,0,.15);
-  margin: 20px auto !important;
+  margin: 0px auto !important;
+  margin-bottom: 10px !important;
+  padding-top: 20px !important;
+  padding-left: 20px !important;
+  padding-bottom: 40px !important;
 }
 
 .StatsRow {
   margin: 0 auto !important;
   display: block;
+}
+
+.ant-row .ant-col-8 > div:hover, .ant-card:hover  {
+  box-shadow: 0px 6px 12px rgba(0,0,0,.15) !important;
 }

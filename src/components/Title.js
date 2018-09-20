@@ -4,7 +4,7 @@ const Title = (props) => (
   <div className="titleWrapper" style={{width: props.width, position: 'relative'}}>
     <h2 className={`title ${props.classes}`} style={{
       textAlign: "center",
-      fontSize: 27,
+      fontSize: 23,
       color: "#9B9B9B"
     }}>{props.title}</h2>
   </div>

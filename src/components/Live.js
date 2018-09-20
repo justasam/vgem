@@ -8,7 +8,7 @@ const options = {
   legend: {
     display: false
   },
-  cutoutPercentage: 75
+  cutoutPercentage: 75,
 }
 class Live extends Component {
   constructor(props) {
@@ -30,14 +30,16 @@ class Live extends Component {
             40+parseInt(Math.random()*20)
           ],
           backgroundColor: [
-          '#FF6384',
-          '#36A2EB',
-          '#FFCE56'
+            '#50E3C2',
+            '#9FE060',
+            '#2C8693',
+            '#F5A623'
           ],
           hoverBackgroundColor: [
-          '#FF6384',
-          '#36A2EB',
-          '#FFCE56'
+            '#50E3C2',
+            '#9FE060',
+            '#2C8693',
+            '#F5A623'
           ]
         }]
       },
@@ -56,14 +58,16 @@ class Live extends Component {
             40+parseInt(Math.random()*20)
           ],
           backgroundColor: [
-          '#FF6384',
-          '#36A2EB',
-          '#FFCE56'
+            '#50E3C2',
+            '#9FE060',
+            '#2C8693',
+            '#F5A623'
           ],
           hoverBackgroundColor: [
-          '#FF6384',
-          '#36A2EB',
-          '#FFCE56'
+            '#50E3C2',
+            '#9FE060',
+            '#2C8693',
+            '#F5A623'
           ]
         }]
       }
@@ -97,7 +101,7 @@ class Live extends Component {
     const { data1, data2 } = this.state;
 
     return (
-      <Row className="Live" gutter={8} style={{width: "100%"}}>
+      <Row className="Live" gutter={8} style={{width: "100%", padding: 10}}>
         <Title title={"LIVE"} classes="underlined"/>
         <Col className="gutter-row" span={12}>
           <Doughnut data={data1} options={options} />
