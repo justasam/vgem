@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.App {
+  min-height: 100vh;
+}
+
+/* .title.underlined::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+} */
+.titleWrapper {
+  text-align: center;
+  line-height: 1;
+}
+.title {
+  position: relative;
+  display: inline-block;
+  white-space: pre-line;
+}
+.title.underlined::before,
+.title.underlined::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: 50%;
+  border-bottom: 2px solid #9B9B9B;
+  width: 80px;
+}
+.title.underlined::before {
+  right: 100%;
+  margin-right: 15px;
+}
+.title.underlined::after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
+
+.smallStat {
+  box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+.smallStat h4 {
+  font-weight: bolder;
+}
+.smallStat span {
+  font-size: 14px;
+}
+
+.List {
+  width: 100%;
+  font-size: 18px;
+  margin: 0 auto !important;
+  display: block !important;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.15);
+}
+.ListItem {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.List .ant-card-body {
+  padding: 10px 5px 10px 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.15);
+}
+.ListRow:hover {
+  font-weight: bold;
+  color: black;
+}
+.ListRow:hover a {
+  color: black;
+}
+
+.Live {
+  box-shadow: 0px 3px 6px rgba(0,0,0,.15);
+  margin: 20px auto !important;
+}
+
+.StatsRow {
+  margin: 0 auto !important;
+  display: block;
+}
